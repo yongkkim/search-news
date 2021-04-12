@@ -46,7 +46,11 @@ const Pagination = ({ articles, setCurrentPage }) => {
   return (
     <Pages>
       {pageNumbers.map((num) => (
-        <Page onClick={() => setCurrentPage(num)} key={num}>
+        <Page
+          aria-label="pagination"
+          onClick={() => setCurrentPage(num)}
+          key={num}
+        >
           {num}
         </Page>
       ))}

@@ -29,7 +29,7 @@ const Close = styled.span`
 
 const Alert = ({ errorMsg, setError }) => {
   return (
-    <AlertMsg>
+    <AlertMsg role="error-message" aria-label="error-message">
       <span>{errorMsg}</span>
       <Close onClick={() => setError(false)}>X</Close>
     </AlertMsg>

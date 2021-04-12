@@ -135,17 +135,26 @@ const Articles = ({
               <Container>
                 <SubContainer>
                   {images[index] ? (
-                    <Aside>
+                    <Aside aria-label="article-image">
                       <Image src={submit ? images[index] : images[index].url} />
                     </Aside>
                   ) : (
-                    <CropOriginalIcon style={{ height: 84, width: 126 }} />
+                    <CropOriginalIcon
+                      style={{ height: 84, width: 126 }}
+                      aria-label="article-no-image"
+                    />
                   )}
                   <Content>
-                    <Title>{submit ? art.headline.main : art.title}</Title>
-                    <p>{art.abstract}</p>
+                    <Title aria-label="article-title">
+                      {submit ? art.headline.main : art.title}
+                    </Title>
+                    <p aria-label="article-abstract">{art.abstract}</p>
                   </Content>
-                  <Link href={art.url} target="_blank">
+                  <Link
+                    href={art.url}
+                    target="_blank"
+                    aria-label="article-link"
+                  >
                     visit to read
                   </Link>
                 </SubContainer>

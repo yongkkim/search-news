@@ -231,15 +231,20 @@ const App = ({
 
   return (
     <div>
-      <BGImage role="background-image" nyt2={nyt2}></BGImage>
+      <BGImage
+        aria-label="background-image"
+        role="background-image"
+        nyt2={nyt2}
+      ></BGImage>
       {error && <Alert />}
-      <TitleContainer role="app-title">
+      <TitleContainer role="app-title" aria-label="app-title">
         <h1>Search most popular articles in New York Times</h1>
       </TitleContainer>
       <form role="search" method="get" onSubmit={(e) => handleSubmit(e)}>
         <SearchContainer role="search-container">
           <Button
             role="button"
+            aria-label="api-call-button"
             type="button"
             getTop={true}
             onMouseEnter={() => setButtonEnter(true)}
@@ -247,6 +252,7 @@ const App = ({
           >
             <ButtonName
               role="button-name"
+              aria-label="button-name"
               onClick={() => handleArticles()}
               enter={buttonEnter}
             >
@@ -255,12 +261,14 @@ const App = ({
           </Button>
           <SearchBar
             role="search-bar"
+            aria-label="search-bar"
             onChange={handleChange}
             value={keyword}
             error={error}
           />
           <Button
             role="submit"
+            aria-label="submit"
             type="submit"
             onMouseEnter={() => setSubmitEnter(true)}
             onMouseLeave={() => setSubmitEnter(false)}
