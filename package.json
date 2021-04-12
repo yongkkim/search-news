@@ -1,5 +1,6 @@
 {
   "name": "search-articles",
+  "homepage": "https://yongkkim.github.io/search-news/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
