@@ -53,6 +53,10 @@ const BGImage = styled.div`
     min-height: 95%;
   }
 
+  @media ${device.mobileRotateS} {
+    min-height: 110%;
+  }
+
   @media ${device.mobileM} {
     min-height: 47%;
   }
@@ -68,6 +72,10 @@ const TitleContainer = styled.div`
   justify-content: center;
   margin-top: 170px;
   color: white;
+
+  @media ${device.mobileRotate} {
+    font-size: 12px;
+  }
 
   @media ${device.mobileM} {
     font-size: 12px;

@@ -20,6 +20,15 @@ const Section = styled.section`
     padding: 0 3%;
     margin-top: 100px;
   }
+
+  @media ${device.mobileRotate} {
+    padding: 0 10%;
+  }
+
+  @media ${device.mobileRotateS} {
+    padding: 0 10%;
+    margin-top: 100px;
+  }
 `;
 
 const Title = styled.h3`
@@ -63,7 +72,11 @@ const Content = styled.div`
   flex: 1 1 0%;
 
   @media ${device.mobileRotate} {
-    font-size: 11px;
+    font-size: 12px;
+  }
+
+  @media ${device.mobileRotateS} {
+    font-size: 10px;
   }
 `;
 

@@ -17,11 +17,15 @@ const AlertMsg = styled.div`
   text-align: center;
   padding: 5px 10px;
 
+  @media ${device.mobileRotate} {
+    margin-top: 100px;
+  }
+
   @media ${device.mobileM} {
     width: unset;
   }
 
-  @,edoa ${device.mobileS} {
+  @media ${device.mobileS} {
     width: unset;
     top: 330px;
   }
