@@ -76,7 +76,6 @@ const Content = styled.div`
   flex: 1 1 0%;
 
   @media ${device.padS} {
-    padding: 0 10%;
     font-size: 11px;
   }
 
