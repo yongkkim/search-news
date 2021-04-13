@@ -49,7 +49,7 @@ const BGImage = styled.div`
     min-height: 25%;
   }
 
-  @media ${device.mobileS} {
+  @media ${device.mobileM} {
     min-height: 40%;
   }
 `;

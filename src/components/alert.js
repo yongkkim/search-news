@@ -17,7 +17,7 @@ const AlertMsg = styled.div`
   text-align: center;
   padding: 5px 10px;
 
-  @media ${device.mobileS} {
+  @media ${device.mobileM} {
     width: unset;
   }
 `;
