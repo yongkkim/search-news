@@ -62,7 +62,7 @@ const Content = styled.div`
   margin-right: 10px;
   flex: 1 1 0%;
 
-  @medai ${device.mobileRotate} {
+  @media ${device.mobileRotate} {
     font-size: 11px;
   }
 `;
