@@ -62,6 +62,10 @@ const BGImage = styled.div`
   }
 
   @media ${device.mobileS} {
+    min-height: 50%;
+  }
+
+  @media ${device.mobileXS} {
     min-height: 56%;
   }
 `;
