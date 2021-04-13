@@ -25,6 +25,10 @@ const Section = styled.section`
     padding: 0 10%;
   }
 
+  @media ${device.padS} {
+    padding: 0 10%;
+  }
+
   @media ${device.mobileRotateS} {
     padding: 0 10%;
     margin-top: 100px;
@@ -70,6 +74,11 @@ const Content = styled.div`
   margin-left: 10px;
   margin-right: 10px;
   flex: 1 1 0%;
+
+  @media ${device.padS} {
+    padding: 0 10%;
+    font-size: 11px;
+  }
 
   @media ${device.mobileRotate} {
     font-size: 12px;

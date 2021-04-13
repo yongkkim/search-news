@@ -49,6 +49,10 @@ const BGImage = styled.div`
     min-height: 25%;
   }
 
+  @media ${device.padS} {
+    min-height: 34%;
+  }
+
   @media ${device.mobileRotate} {
     min-height: 95%;
   }
