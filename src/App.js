@@ -34,6 +34,7 @@ const BGImage = styled.div`
   background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   z-index: -1;
 
   @media ${device.laptopM} {
@@ -49,7 +50,7 @@ const BGImage = styled.div`
   }
 
   @media ${device.mobileS} {
-    min-height: 50%;
+    min-height: 40%;
   }
 `;
 
