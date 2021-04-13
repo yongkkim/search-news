@@ -52,6 +52,10 @@ const BGImage = styled.div`
   @media ${device.mobileM} {
     min-height: 47%;
   }
+
+  @media ${device.mobileS} {
+    min-height: 56%;
+  }
 `;
 
 const TitleContainer = styled.div`

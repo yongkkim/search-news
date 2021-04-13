@@ -20,6 +20,11 @@ const AlertMsg = styled.div`
   @media ${device.mobileM} {
     width: unset;
   }
+
+  @,edoa ${device.mobileS} {
+    width: unset;
+    top: 330px;
+  }
 `;
 
 const Close = styled.span`
