@@ -6,31 +6,32 @@
 
 - It should be a useful features but for some reasons I had an error using it and time is running out so I couldn't use it. It is middleware in redux
 
-export function middleWare({ dispatch }) {
-return function (next) {
-return function (action) {
-if (action.type === "KEYWORD") {
-let cleanedKeyword = action.paylaod.replace(/['"]+/g, "").trim();
+  export function middleWare({ dispatch }) {
+  return function (next) {
+  return function (action) {
+  if (action.type === "KEYWORD") {
+  let cleanedKeyword = action.paylaod.replace(/['"]+/g, "").trim();
 
-        if (action.payload >= 40) {
-          dispatch({
-            type: "ERROR_MESSAGE",
-            payload: "Keyword should be less than 40 characters",
-          });
-        }
+                        if (action.payload >= 40) {
+                            dispatch({
+                                type: "ERROR_MESSAGE",
+                                payload: "Keyword should be less than 40 characters",
+                            });
+                        }
 
-        if (cleanedKeyword !== "") {
-          dispatch({
-            type: "ERROR_MESSAGE",
-            payload: "Keyword should not be empty",
-          });
-        }
-      }
-      return next(action);
-    };
+                        if (cleanedKeyword !== "") {
+                            dispatch({
+                                type: "ERROR_MESSAGE",
+                                payload: "Keyword should not be empty",
+                            });
+                        }
+                }
+                return next(action);
+            };
 
-};
-}
+        };
+
+  }
 
 since action and reducers only work with receiving and distributing states, if I want to add some bussiness rules, any rules, or filters, a middleware is a nice feature for it.
 
@@ -46,6 +47,7 @@ since action and reducers only work with receiving and distributing states, if I
 
 - Once I receive a JSON formatted response, I expend key value pairs to find information that I am looking for. When I actually get a response and save into one state, I save a specific information through keys and values paths. Then, I map it to HTML elements to display. If there is sub-information that is not shown in HTML elements for some reasons such as it is an object or extra actions are needed to be displayed, then with some extra implementation, I map it to HTML elements and use index of the first mapped elements to map with the new mapped elements.
 
-like first.map((element, index) => {
+like
+first.map((element, index) => {
 second[index].element
 })
