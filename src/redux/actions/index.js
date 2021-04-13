@@ -76,7 +76,6 @@ export function setSnippet(snippet) {
   return { type: SNIPPET, payload: snippet };
 }
 export function setErrorMsg(errorMsg) {
-  console.log(errorMsg);
   return { type: ERROR_MESSAGE, payload: errorMsg };
 }
 export function setError(error) {

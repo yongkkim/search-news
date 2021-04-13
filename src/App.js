@@ -49,6 +49,10 @@ const BGImage = styled.div`
     min-height: 25%;
   }
 
+  @media ${device.mobileRotate} {
+    min-height: 95%;
+  }
+
   @media ${device.mobileM} {
     min-height: 47%;
   }
@@ -231,8 +235,6 @@ const App = ({
       setKeyword("");
     }
   };
-
-  console.log(errorMsg);
 
   return (
     <div>

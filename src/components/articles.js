@@ -12,8 +12,6 @@ const ArticleContainer = styled.ul`
   padding: 0;
 `;
 
-const ArticleBlock = styled.li``;
-
 const Section = styled.section`
   padding: 0 20%;
   margin-top: 120px;
@@ -63,6 +61,10 @@ const Content = styled.div`
   margin-left: 10px;
   margin-right: 10px;
   flex: 1 1 0%;
+
+  @medai ${device.mobileRotate} {
+    font-size: 11px;
+  }
 `;
 
 const Aside = styled.aside`
